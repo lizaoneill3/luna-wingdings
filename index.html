@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wingdings</title>
+  <style>
+    :root { color-scheme: dark; --accent: #F7C449; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #151515; color: #ddd; font: 14px -apple-system, Helvetica, sans-serif; height: 100vh; display: flex; flex-direction: column; user-select: none; }
+    main { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 12px; padding: 16px; }
+    button { font: inherit; border-radius: 10px; cursor: pointer; padding: 14px; border: 1px solid #444; background: #2a2a2a; color: #ddd; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+    button .big { font-size: 26px; letter-spacing: .08em; }
+    button .small { font-size: 12px; opacity: .75; }
+    #to { background: var(--accent); color: #000; border-color: #c99a2a; }
+    button:disabled { opacity: .35; cursor: default; }
+    button:active:not(:disabled) { transform: scale(.98); }
+    #count { text-align: center; color: #999; font-size: 12px; min-height: 1em; }
+    footer { padding: 6px 12px; color: #777; font-size: 12px; text-align: center; }
+  </style>
+</head>
+<body>
+  <main>
+    <button id="to" disabled><span class="big">🕈♓■♑♎♓■♑⬧</span><span class="small">Turn all names into Wingdings</span></button>
+    <button id="from" disabled><span class="big">Restore</span><span class="small">Turn them back into text</span></button>
+    <div id="count"></div>
+  </main>
+  <footer id="status">connecting...</footer>
+  <script src="vendor/luna.global.js"></script>
+  <script src="logic.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

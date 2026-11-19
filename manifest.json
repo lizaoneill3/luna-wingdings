@@ -1,0 +1,18 @@
+{
+    "package_name": "Wingdings",
+    "id": "io.github.lizaoneill3.wingdings",
+    "title": "Wingdings",
+    "version": "0.1.0",
+    "manufacturer": "lizaoneill3",
+    "description": "Turns every track, bus, marker and clip name in the session into Wingdings symbols, and back.",
+    "categories": ["Session Management"],
+    "sdk_version": "3.1.2",
+    "min_luna_version": "3.1.1",
+    "engines": ["luna"],
+    "html": "index.html",
+    "target": "window",
+    "floating": true,
+    "show_with_session": true,
+    "width": 380,
+    "height": 300
+}
